@@ -13,7 +13,7 @@
         factory['default'] = factory;
         module.exports = factory;
     } else if (typeof define === 'function' && define.amd) {
-        define('highcharts/modules/data', ['public/highcharts/highcharts'], function (Highcharts) {
+        define('highcharts/modules/data', ['docs/highcharts/highcharts'], function (Highcharts) {
             factory(Highcharts);
             factory.Highcharts = Highcharts;
             return factory;

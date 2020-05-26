@@ -2,9 +2,9 @@
   "name": "highcharts",
   "version": "1.0.0",
   "description": "",
-  "main": "public/index.js",
+  "main": "docs/index.",
   "scripts": {
-    "start": "cd public && live-server",
+    "start": "cd docs && live-server"
   },
   "repository": {
     "type": "git",
