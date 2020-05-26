@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             verticalAlign: "center",
             layout: "vertical",
             x: 0,
-            y: 200
+            y: 150
         },
     });
     console.log(chart);
