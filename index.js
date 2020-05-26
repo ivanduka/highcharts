@@ -1,38 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var myChart = Highcharts.chart('container', {
+  Highcharts.chart('container', {
     chart: {
-      type: 'bar'
+      type: 'column'
+    },
+    data: {
+      // enablePolling: true,
+      csvURL: window.location.origin + '/data_.csv'
     },
     title: {
       text: 'Fruit Consumption'
     },
-    xAxis: {
-      categories: ['Apples', 'Bananas', 'Oranges']
-    },
     yAxis: {
       title: {
-        text: 'Fruit eaten'
+        text: 'Units'
       }
-    },
-    series: [{
-      name: 'Jane',
-      data: [1, 0, 4]
-    }, {
-      name: 'John',
-      data: [5, 7, 3]
-    }]
-  });
-});
-
-var chart1; // globally available
-document.addEventListener('DOMContentLoaded', function() {
-  chart1 = Highcharts.stockChart('container', {
-    rangeSelector: {
-      selected: 1
-    },
-    series: [{
-      name: 'USD to EUR',
-      data: usdtoeur // predefined JavaScript array
-    }]
+    }
   });
 });
